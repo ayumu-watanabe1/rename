@@ -273,3 +273,13 @@ for title in glob.glob("*"+"ピーター・グリルと"+"*"):
 
     new_dir_path="E:\\TV(h.265)\\ピーター・グリルと賢者の時間\\"
     Rename()
+
+for title in glob.glob("*"+"虚構推理"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\虚構推理\\"
+    Rename()
+
+for title in glob.glob("*"+"戦姫絶唱シンフォギアXV"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\戦姫絶唱シンフォギアXV\\"
+    Rename()
