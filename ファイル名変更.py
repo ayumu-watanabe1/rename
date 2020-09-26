@@ -283,3 +283,38 @@ for title in glob.glob("*"+"戦姫絶唱シンフォギアXV"+"*"):
 
     new_dir_path="E:\\TV(h.265)\\戦姫絶唱シンフォギアXV\\"
     Rename()
+
+for title in glob.glob("*"+"まちカドまぞく"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\まちカドまぞく\\"
+    Rename()
+
+for title in glob.glob("*"+"ダンベル何キロ持てる？"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\ダンベル何キロ持てる？\\"
+    Rename()
+
+for title in glob.glob("*"+"邪神ちゃんドロップキック'"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\邪神ちゃんドロップキック'\\"
+    Rename()
+
+for title in glob.glob("*"+"慎重勇者～この勇者が俺TUEEEくせに慎重すぎる～"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\慎重勇者～この勇者が俺TUEEEくせに慎重すぎる～\\"
+    Rename()
+
+for title in glob.glob("*"+"彼女、お借りします"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\彼女、お借りします\\"
+    Rename()
+
+for title in glob.glob("*"+"終物語"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\終物語\\"
+    Rename()
+
+for title in glob.glob("*"+"憑物語"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\憑物語\\"
+    Rename()
