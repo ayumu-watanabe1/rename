@@ -31,3 +31,9 @@ for title in glob.glob("*"+"半沢直樹"+"*"):
     new_dir_path="E:\\TV(h.265)\\日曜劇場 半沢直樹\\"
 
     Rename()
+
+for title in glob.glob("*"+"妖怪シェアハウス"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\妖怪シェアハウス\\"
+
+    Rename()
