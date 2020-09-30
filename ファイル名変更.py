@@ -318,3 +318,53 @@ for title in glob.glob("*"+"憑物語"+"*"):
 
     new_dir_path="E:\\TV(h.265)\\憑物語\\"
     Rename()
+
+for title in glob.glob("*"+"花子くん"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\地縛少年花子くん\\"
+    Rename()
+
+for title in glob.glob("*"+"ヲタクに恋は難しい"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\ヲタクに恋は難しい\\"
+    Rename()
+
+for title in glob.glob("*"+"推しが武道館"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\推しが武道館いってくれたら死ぬ\\"
+    Rename()
+
+for title in glob.glob("*"+"神様になった日"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\神様になった日\\"
+    Rename()
+
+for title in glob.glob("*"+"GOD EATER"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\GOD EATER\\"
+    Rename()
+
+for title in glob.glob("*"+"ハイスコアガール"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\ハイスコアガール\\"
+    Rename()
+
+for title in glob.glob("*"+"学園黙示録 HIGHSCHOOL"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\学園黙示録 HIGHSCHOOL OF THE DEAD\\"
+    Rename()
+
+for title in glob.glob("*"+"CLANNAD ～AFTER STORY～"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\CLANNAD ～AFTER STORY～\\"
+    Rename()
+
+for title in glob.glob("*"+"オーバーロードⅢ"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\オーバーロードⅢ\\"
+    Rename()
+
+for title in glob.glob("*"+"ノラと皇女と野良猫ハート"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\ノラと皇女と野良猫ハート\\"
+    Rename()
