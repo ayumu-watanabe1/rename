@@ -361,7 +361,7 @@ for title in glob.glob("*"+"CLANNAD ～AFTER STORY～"+"*"):
 
 for title in glob.glob("*"+"オーバーロードⅢ"+"*"):
 
-    new_dir_path="E:\\TV(h.265)\\オーバーロードⅢ\\"
+    new_dir_path="E:\\TV(h.265)\\オーバーロードIII\\"
     Rename()
 
 for title in glob.glob("*"+"ノラと皇女と野良猫ハート"+"*"):

@@ -85,6 +85,7 @@ def foldercpy(start,end,year):
 
                 title2 = os.path.join(path1,os.path.join(year,l[num]))
 
+                print(title+"をコピーします")
                 new_path = dir_util.copy_tree(title,title2)    #フォルダコピー
                 print(new_path)
 
