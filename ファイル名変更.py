@@ -368,3 +368,68 @@ for title in glob.glob("*"+"ノラと皇女と野良猫ハート"+"*"):
 
     new_dir_path="E:\\TV(h.265)\\ノラと皇女と野良猫ハート\\"
     Rename()
+
+for title in glob.glob("*"+"胡蝶綺 ～若き信長～"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\胡蝶綺 ～若き信長～\\"
+    Rename()
+
+for title in glob.glob("*"+"バジャのスタジオ～バジャのみた海～"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\バジャのスタジオ～バジャのみた海～\\"
+    Rename()
+
+for title in glob.glob("*"+"上野さんは不器用"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\上野さんは不器用\\"
+    Rename()
+
+for title in glob.glob("*"+"あそびあそばせ"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\あそびあそばせ\\"
+    Rename()
+
+for title in glob.glob("*"+"へやキャン△"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\へやキャン△\\"
+    Rename()
+
+for title in glob.glob("*"+"Lapis Re：LiGHTs"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\Lapis Re：LiGHTs ラピスリライツ\\"
+    Rename()
+
+for title in glob.glob("*"+"となりの吸血鬼さん"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\となりの吸血鬼さん\\"
+    Rename()
+
+for title in glob.glob("*"+"NOBLESSE -ノブレス-"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\NOBLESSE -ノブレス-\\"
+    Rename()
+
+for title in glob.glob("*"+"犬夜叉 完結編"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\犬夜叉 完結編\\"
+    Rename()
+
+for title in glob.glob("*"+"織田信奈の野望"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\織田信奈の野望\\"
+    Rename()
+
+for title in glob.glob("*"+"OVA かのこん～真夏の大謝肉祭～"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\かのこん ～真夏の大謝肉祭～\\"
+    Rename()
+
+for title in glob.glob("*"+"聖痕のクェイサーII"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\聖痕のクェイサーII\\"
+    Rename()
+
+for title in glob.glob("*"+"世話やきキツネの仙狐さん"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\世話やきキツネの仙狐さん\\"
+    Rename()
