@@ -433,3 +433,83 @@ for title in glob.glob("*"+"世話やきキツネの仙狐さん"+"*"):
 
     new_dir_path="E:\\TV(h.265)\\世話やきキツネの仙狐さん\\"
     Rename()
+
+for title in glob.glob("*"+"痛いのは嫌なので防御力に極振りしたいと思います。"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\痛いのは嫌なので防御力に極振りしたいと思います。\\"
+    Rename()
+
+for title in glob.glob("*"+"八男って、それはないでしょう"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\八男って、それはないでしょう！\\"
+    Rename()
+
+for title in glob.glob("*"+"くまクマ熊ベアー"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\くまクマ熊ベアー\\"
+    Rename()
+
+for title in glob.glob("*"+"100万の命の上に俺は立っている"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\100万の命の上に俺は立っている\\"
+    Rename()
+
+for title in glob.glob("*"+"いわかける!"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\いわかける！ -Sport Climbing Girls-\\"
+    Rename()
+
+for title in glob.glob("*"+"アクダマドライブ"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\アクダマドライブ\\"
+    Rename()
+
+for title in glob.glob("*"+"キングスレイド 意志を継ぐものたち"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\キングスレイド 意志を継ぐものたち\\"
+    Rename()
+
+for title in glob.glob("*"+"鬼滅の刃"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\鬼滅の刃\\"
+    Rename()
+
+for title in glob.glob("*"+"かぐや様は告らせたい～天才たちの恋愛頭脳戦～"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\かぐや様は告らせたい～天才たちの恋愛頭脳戦～\\"
+    Rename()
+
+for title in glob.glob("*"+"ANIMAX MUSIX"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\ANIMAX MUSIX\\"
+    Rename()
+
+for title in glob.glob("*"+"ガーリー・エアフォース"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\ガーリー・エアフォース\\"
+    Rename()
+
+for title in glob.glob("*"+"体操ザムライ"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\体操ザムライ\\"
+    Rename()
+
+for title in glob.glob("*"+"トニカクカワイイ"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\トニカクカワイイ\\"
+    Rename()
+
+for title in glob.glob("*"+"やはり俺の青春ラブコメはまちがっている。完"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\やはり俺の青春ラブコメはまちがっている。完\\"
+    Rename()
+
+for title in glob.glob("*"+"異能バトルは日常系のなかで"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\異能バトルは日常系のなかで\\"
+    Rename()
+
+for title in glob.glob("*"+"Re：ゼロから始める異世界生活 氷結の絆"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\Re：ゼロから始める異世界生活 氷結の絆\\"
+    Rename()
