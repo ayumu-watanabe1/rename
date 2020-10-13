@@ -37,3 +37,15 @@ for title in glob.glob("*"+"妖怪シェアハウス"+"*"):
     new_dir_path="E:\\TV(h.265)\\妖怪シェアハウス\\"
 
     Rename()
+
+for title in glob.glob("*"+"MIU404"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\MIU404\\"
+
+    Rename()
+
+for title in glob.glob("*"+"DIVER"+"*"):
+
+    new_dir_path="E:\\TV(h.265)\\DIVER-特殊潜入班-\\"
+
+    Rename()
