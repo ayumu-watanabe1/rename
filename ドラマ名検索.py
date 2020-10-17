@@ -50,3 +50,9 @@ for title in glob.glob("*"+"DIVER"+"*"):
     new_dir_path = "E:\\TV(h.265)\\DIVER-特殊潜入班-\\"
 
     Rename()
+
+for title in glob.glob("*"+"35歳の少女"+"*"):
+
+    new_dir_path = "E:\\TV(h.265)\\35歳の少女\\"
+
+    Rename()
