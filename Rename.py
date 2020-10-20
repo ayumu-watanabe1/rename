@@ -128,6 +128,22 @@ def Rename():
             changetitle = re.sub("【無料】", "", title)
             RENAME_TRY(title, changetitle)
 
+        if re.search("キッズステーション", title):
+            changetitle = re.sub("[キッズステーション]", "", title)
+            RENAME_TRY(title, changetitle)
+
+        if re.search("テレ朝チャンネル", title):
+            changetitle = re.sub("テレ朝チャンネル", "テレ朝", title)
+            RENAME_TRY(title, changetitle)
+
+        if re.search("日テレプラス", title):
+            changetitle = re.sub("日テレプラス", "日テレ", title)
+            RENAME_TRY(title, changetitle)
+
+        if re.search("TBSチャンネル", title):
+            changetitle = re.sub("TBSチャンネル", "TBS", title)
+            RENAME_TRY(title, changetitle)
+
         if re.search("^「", title):
             changetitle = re.sub("^「", "", title)
             changetitle = re.sub("「", " ", changetitle)
