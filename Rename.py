@@ -157,8 +157,11 @@ def Rename():
 def searchfolder(start, end, year):
     for num in range(start, end):  # path生成
 
-        os.chdir(os.path.join(path1, os.path.join(year, l[num])))
-        Rename()
+        try:
+            os.chdir(os.path.join(path1, os.path.join(year, l[num])))
+            Rename()
+        except WindowsError:
+            pass  # 　ファイルが存在しなくても実行を続ける（スキップ）
 
 
 path2 = r"E:\TV(h.265)\映画"
