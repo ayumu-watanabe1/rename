@@ -55,7 +55,7 @@ s_2013 = e_2012+1
 e_2013 = s_2013+5
 
 s_2014 = e_2013+1
-e_2014 = s_2014+16
+e_2014 = s_2014+17
 
 s_2015 = e_2014+1
 e_2015 = s_2015+13
@@ -75,8 +75,8 @@ e_2019 = s_2019+57
 s_2020 = e_2019+1
 e_2020 = s_2020+109
 
-path = "E:\\TV(h.265)\\フォルダ一覧(py).txt"
-path1 = "E:\\TV(h.265)"
+path = "D:\\TV(h.265)\\フォルダ一覧(py).txt"
+path1 = "D:\\TV(h.265)"
 
 print("これからファイルを移動しますが、既に存在した場合　削除　しますか？ yesかnoで\n")
 ans = input()
@@ -145,11 +145,11 @@ def searchfolder(start, end, year):
         Rename()
 
 
-path2 = r"E:\TV(h.265)\映画"
-path3 = r"E:\TV(h.265)\夏目友人帳シリーズ\夏目友人帳"
-path4 = r"E:\TV(h.265)\夏目友人帳シリーズ\夏目友人帳 陸"
-path5 = r"E:\TV(h.265)\夏目友人帳シリーズ\続 夏目友人帳"
-path6 = r"E:\TV(h.265)\ANIMAX MUSIX"
+path2 = r"D:\TV(h.265)\映画"
+path3 = r"D:\TV(h.265)\夏目友人帳シリーズ\夏目友人帳"
+path4 = r"D:\TV(h.265)\夏目友人帳シリーズ\夏目友人帳 陸"
+path5 = r"D:\TV(h.265)\夏目友人帳シリーズ\続 夏目友人帳"
+path6 = r"D:\TV(h.265)\ANIMAX MUSIX"
 os.chdir(path6)
 Rename()
 
