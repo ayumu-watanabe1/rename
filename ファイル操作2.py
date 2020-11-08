@@ -53,7 +53,7 @@ s_2013 = e_2012+1
 e_2013 = s_2013+5
 
 s_2014 = e_2013+1
-e_2014 = s_2014+16
+e_2014 = s_2014+17
 
 s_2015 = e_2014+1
 e_2015 = s_2015+13
@@ -73,8 +73,8 @@ e_2019 = s_2019+57
 s_2020 = e_2019+1
 e_2020 = s_2020+109
 
-path = "E:\\TV(h.265)\\フォルダ一覧(py).txt"
-path1 = "E:\\TV(h.265)"
+path = "C:\\prog\\git\\rename\\フォルダ一覧(py).txt"
+path1 = "D:\\TV(h.265)"
 
 
 def foldercpy(start, end, year):
@@ -93,7 +93,7 @@ def foldercpy(start, end, year):
             shutil.rmtree(title)  # 元のフォルダ削除
 
 
-with open(path) as f:
+with open(path,"r",encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
 
     foldercpy(s_1999, e_1999, "1999")
