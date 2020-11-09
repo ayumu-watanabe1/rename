@@ -55,7 +55,7 @@ s_2013 = e_2012+1
 e_2013 = s_2013+5
 
 s_2014 = e_2013+1
-e_2014 = s_2014+17
+e_2014 = s_2014+18
 
 s_2015 = e_2014+1
 e_2015 = s_2015+13
@@ -69,13 +69,7 @@ e_2017 = s_2017+10
 s_2018 = e_2017+1
 e_2018 = s_2018+32
 
-s_2019 = e_2018+1
-e_2019 = s_2019+57
-
-s_2020 = e_2019+1
-e_2020 = s_2020+109
-
-path = "D:\\TV(h.265)\\フォルダ一覧(py).txt"
+path = r"C:\prog\git\rename\フォルダ一覧(py).txt"
 path1 = "D:\\TV(h.265)"
 
 print("これからファイルを移動しますが、既に存在した場合　削除　しますか？ yesかnoで\n")
@@ -140,9 +134,11 @@ def Rename():
 
 def searchfolder(start, end, year):
     for num in range(start, end):  # path生成
-
-        os.chdir(os.path.join(path1, os.path.join(year, l[num])))
-        Rename()
+        try:
+            os.chdir(os.path.join(path1, os.path.join(year, l[num])))
+            Rename()
+        except WindowsError:
+            pass
 
 
 path2 = r"D:\TV(h.265)\映画"
@@ -153,7 +149,7 @@ path6 = r"D:\TV(h.265)\ANIMAX MUSIX"
 os.chdir(path6)
 Rename()
 
-with open(path) as f:
+with open(path, encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
 
     searchfolder(s_1999, e_1999, "1999")
@@ -196,6 +192,17 @@ with open(path) as f:
 
     searchfolder(s_2018, e_2018, "2018")
 
-    searchfolder(s_2019, e_2019, "2019")
-
-    searchfolder(s_2020, e_2020, "2020")
+with open(r"C:\prog\git\rename\2019.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 100, "2019")
+    except:
+        pass
+    
+with open(r"C:\prog\git\rename\2020.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 200, "2020")
+    except:
+        pass
+    

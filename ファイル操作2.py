@@ -29,7 +29,7 @@ s_2005 = e_2004+1
 e_2005 = s_2005+1
 
 s_2006 = e_2005+1
-e_2006 = s_2006+3
+e_2006 = s_2006+4
 
 s_2007 = e_2006+1
 e_2007 = s_2007+2
@@ -53,7 +53,7 @@ s_2013 = e_2012+1
 e_2013 = s_2013+5
 
 s_2014 = e_2013+1
-e_2014 = s_2014+17
+e_2014 = s_2014+18
 
 s_2015 = e_2014+1
 e_2015 = s_2015+13
@@ -66,12 +66,6 @@ e_2017 = s_2017+10
 
 s_2018 = e_2017+1
 e_2018 = s_2018+32
-
-s_2019 = e_2018+1
-e_2019 = s_2019+57
-
-s_2020 = e_2019+1
-e_2020 = s_2020+109
 
 path = "C:\\prog\\git\\rename\\フォルダ一覧(py).txt"
 path1 = "D:\\TV(h.265)"
@@ -135,7 +129,17 @@ with open(path,"r",encoding="utf-8") as f:
     foldercpy(s_2017, e_2017, "2017")
 
     foldercpy(s_2018, e_2018, "2018")
+    
+with open(r"C:\prog\git\rename\2019.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        foldercpy(0, 100, "2019")
+    except:
+        pass
 
-    foldercpy(s_2019, e_2019, "2019")
-
-    foldercpy(s_2020, e_2020, "2020")
+with open(r"C:\prog\git\rename\2019.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        foldercpy(0, 150, "2020")
+    except:
+        pass
