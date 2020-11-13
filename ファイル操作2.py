@@ -130,14 +130,14 @@ with open(path,"r",encoding="utf-8") as f:
 
     foldercpy(s_2018, e_2018, "2018")
     
-with open(r"C:\prog\git\rename\2019.txt", encoding="utf-8") as f:
+with open(r"C:\prog\git\rename\2019.txt","r", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         foldercpy(0, 100, "2019")
     except:
         pass
 
-with open(r"C:\prog\git\rename\2019.txt", encoding="utf-8") as f:
+with open(r"C:\prog\git\rename\2020.txt","r", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         foldercpy(0, 150, "2020")
