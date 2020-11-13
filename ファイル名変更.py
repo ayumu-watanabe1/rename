@@ -530,7 +530,7 @@ for title in glob.glob("*"+"魔王様、リトライ"+"*"):
 
 for title in glob.glob("*"+"戦×恋(ヴァルラヴ)"+"*"):
 
-    new_dir_path = "D:\\TV(h.265)\\戦×恋\\"
+    new_dir_path = "D:\\TV(h.265)\\戦×恋(ヴァルラヴ)\\"
     Rename()
 
 for title in glob.glob("*"+"アホガール"+"*"):
@@ -538,9 +538,9 @@ for title in glob.glob("*"+"アホガール"+"*"):
     new_dir_path = "D:\\TV(h.265)\\アホガール\\"
     Rename()
 
-for title in glob.glob("*"+"中二病でも恋がしたい"+"*"):
+for title in glob.glob("*"+"中二病でも恋がしたい！"+"*"):
 
-    new_dir_path = "D:\\TV(h.265)\\中二病でも恋がしたい!\\"
+    new_dir_path = "D:\\TV(h.265)\\中二病でも恋がしたい！\\"
     Rename()
 
 for title in glob.glob("*"+"ゆるキャン△"+"*"):
@@ -560,7 +560,7 @@ for title in glob.glob("*"+"ヨスガノソラ"+"*"):
 
 for title in glob.glob("*"+"フェアリーゴーン"+"*"):
 
-    new_dir_path = "D:\\TV(h.265)\\Fairy gone\\"
+    new_dir_path = "D:\\TV(h.265)\\Fairy gone フェアリーゴーン\\"
     Rename()
 
 for title in glob.glob("*"+"政宗くんのリベンジ"+"*"):
