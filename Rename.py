@@ -31,7 +31,7 @@ s_2005 = e_2004+1
 e_2005 = s_2005+1
 
 s_2006 = e_2005+1
-e_2006 = s_2006+3
+e_2006 = s_2006+4
 
 s_2007 = e_2006+1
 e_2007 = s_2007+2
@@ -107,6 +107,22 @@ def Rename():
         if re.search("＜アニメギルド＞", title):
             changetitle = re.sub("＜アニメギルド＞", "", title)
             changetitle = re.sub("アニメ", "", changetitle)
+            RENAME_TRY(title, changetitle)
+        
+        if re.search("キッズステーション", title):
+            changetitle = re.sub("キッズステーション", "KIDS", title)
+            RENAME_TRY(title, changetitle)
+
+        if re.search("TBSチャンネル", title):
+            changetitle = re.sub("TBSチャンネル", "TBS", title)
+            RENAME_TRY(title, changetitle)
+
+        if re.search("日テレプラス", title):
+            changetitle = re.sub("日テレプラス", "日テレ", title)
+            RENAME_TRY(title, changetitle)
+
+        if re.search("BSアニマックス", title):
+            changetitle = re.sub("BSアニマックス", "BS", title)
             RENAME_TRY(title, changetitle)
 
         if re.search("TVアニメ", title):
