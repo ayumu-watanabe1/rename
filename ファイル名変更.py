@@ -602,3 +602,18 @@ for title in glob.glob("*"+"バカとテストと召喚獣にっ"+"*"):
 
     new_dir_path = "D:\\TV(h.265)\\バカとテストと召喚獣にっ!\\"
     Rename()
+
+for title in glob.glob("*"+"涼宮ハルヒの憂鬱"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\涼宮ハルヒの憂鬱\\"
+    Rename()
+
+for title in glob.glob("*"+"なんでここに先生が"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\なんでここに先生が！？\\"
+    Rename()
+
+for title in glob.glob("*"+"聖痕のクェイサー"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\聖痕のクェイサー\\"
+    Rename()
