@@ -57,18 +57,6 @@ e_2013 = s_2013+5
 s_2014 = e_2013+1
 e_2014 = s_2014+18
 
-s_2015 = e_2014+1
-e_2015 = s_2015+13
-
-s_2016 = e_2015+1
-e_2016 = s_2016+8
-
-s_2017 = e_2016+1
-e_2017 = s_2017+10
-
-s_2018 = e_2017+1
-e_2018 = s_2018+32
-
 path = r"C:\prog\git\rename\フォルダ一覧(py).txt"
 path1 = "D:\\TV(h.265)"
 
@@ -200,13 +188,30 @@ with open(path, encoding="utf-8") as f:
 
     searchfolder(s_2014, e_2014, "2014")
 
-    searchfolder(s_2015, e_2015, "2015")
-
-    searchfolder(s_2016, e_2016, "2016")
-
-    searchfolder(s_2017, e_2017, "2017")
-
-    searchfolder(s_2018, e_2018, "2018")
+with open(r"C:\prog\git\rename\2015.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 100, "2015")
+    except:
+        pass
+with open(r"C:\prog\git\rename\2016.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 100, "2016")
+    except:
+        pass
+with open(r"C:\prog\git\rename\2017.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 100, "2017")
+    except:
+        pass
+with open(r"C:\prog\git\rename\2018.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 100, "2018")
+    except:
+        pass
 
 with open(r"C:\prog\git\rename\2019.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
