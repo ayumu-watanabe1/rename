@@ -140,7 +140,7 @@ for title in glob.glob("*"+"無彩限の"+"*"):
     new_dir_path = "D:\\TV(h.265)\\無彩限のファントム・ワールド\\"
     Rename()
 
-
+"""
 for title in glob.glob("*"+"続 夏目友人帳"+"*"):
 
     new_dir_path = "D:\\TV(h.265)\\夏目友人帳シリーズ\\続 夏目友人帳\\"
@@ -169,7 +169,7 @@ for title in glob.glob("*"+"夏目友人帳"+"*"):
 
     new_dir_path = "D:\\TV(h.265)\\夏目友人帳シリーズ"
     Rename()
-
+"""
 for title in glob.glob("*"+"けいおん!!"+"*"):
 
     new_dir_path = "D:\\TV(h.265)\\けいおん！！\\"

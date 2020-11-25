@@ -150,7 +150,7 @@ path3 = r"D:\TV(h.265)\夏目友人帳シリーズ\夏目友人帳"
 path4 = r"D:\TV(h.265)\夏目友人帳シリーズ\夏目友人帳 陸"
 path5 = r"D:\TV(h.265)\夏目友人帳シリーズ\続 夏目友人帳"
 path6 = r"D:\TV(h.265)\ANIMAX MUSIX"
-os.chdir(path6)
+#os.chdir(path6)
 Rename()
 
 with open(path, encoding="utf-8") as f:
