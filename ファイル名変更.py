@@ -617,3 +617,33 @@ for title in glob.glob("*"+"聖痕のクェイサー"+"*"):
 
     new_dir_path = "D:\\TV(h.265)\\聖痕のクェイサー\\"
     Rename()
+
+for title in glob.glob("*"+"アサルトリリィ"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\アサルトリリィ BOUQUET\\"
+    Rename()
+
+for title in glob.glob("*"+"中二病でも恋がしたい!戀"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\中二病でも恋がしたい！戀\\"
+    Rename()
+
+for title in glob.glob("*"+"中二病でも恋がしたい!"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\中二病でも恋がしたい！\\"
+    Rename()
+
+for title in glob.glob("*"+"繰繰れ! コックリさん"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\繰繰れ！コックリさん\\"
+    Rename()
+
+for title in glob.glob("*"+"甘々と稲妻"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\甘々と稲妻\\"
+    Rename()
+
+for title in glob.glob("*"+"WHITE ALBUM"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\WHITE ALBUM\\"
+    Rename()

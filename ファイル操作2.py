@@ -5,6 +5,7 @@ TV(h.265)内にあるアニメフォルダーを放送年に合わせて移動�
 import shutil
 import os
 import glob
+import subprocess
 from distutils import dir_util
 
 s_1999 = 1
@@ -38,7 +39,7 @@ s_2008 = e_2007+1
 e_2008 = s_2008+3
 
 s_2009 = e_2008+1
-e_2009 = s_2009+4
+e_2009 = s_2009+5
 
 path = "C:\\prog\\git\\rename\\フォルダ一覧(py).txt"
 path1 = "D:\\TV(h.265)"
@@ -54,10 +55,23 @@ def foldercpy(start, end, year):
             title2 = os.path.join(path1, os.path.join(year, l[num]))
 
             print(title+"をコピーします")
-            new_path = dir_util.copy_tree(title, title2)  # フォルダコピー
-            print(new_path)
-
-            shutil.rmtree(title)  # 元のフォルダ削除
+            try:
+                command2 = ["powershell", "-command", "New-Item",
+                            "'"+title2+"'","-Type","Directory"]
+                subprocess.check_call(command2,shell=True)
+            except:
+                pass
+            try:
+                command = ["powershell","-Command","Move-Item","'"+title+"\\*'","'"+title2+"'"]
+                command1 = ["powershell", "-Command", "rm",
+                           "'"+title+"'"]
+                subprocess.check_call(command, shell=True)
+                subprocess.check_call(command1, shell=True)
+            except:
+                print("move-item error")
+            #new_path = dir_util.copy_tree(title, title2)  # フォルダコピー
+            #print(new_path)
+            #shutil.rmtree(title)  # 元のフォルダ削除
 
 
 with open(path, "r", encoding="utf-8") as f:
