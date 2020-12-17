@@ -647,3 +647,73 @@ for title in glob.glob("*"+"WHITE ALBUM"+"*"):
 
     new_dir_path = "D:\\TV(h.265)\\WHITE ALBUM\\"
     Rename()
+
+for title in glob.glob("*"+"ダーウィンズゲーム"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\ダーウィンズゲーム\\"
+    Rename()
+
+for title in glob.glob("*"+"衛宮さんちの今日のごはん"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\衛宮さんちの今日のごはん\\"
+    Rename()
+
+for title in glob.glob("*"+"デスマーチからはじまる異世界狂想曲"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\デスマーチからはじまる異世界狂想曲\\"
+    Rename()
+
+for title in glob.glob("*"+"刀使ノ巫女"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\刀使ノ巫女\\"
+    Rename()
+
+for title in glob.glob("*"+"金曜ロードSHOW!"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\金曜ロードSHOW！\\"
+    Rename()
+
+for title in glob.glob("*"+"おちこぼれフルーツタルト"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\おちこぼれフルーツタルト\\"
+    Rename()
+
+for title in glob.glob("*"+"池袋ウエストゲートパーク"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\池袋ウエストゲートパーク\\"
+    Rename()
+
+for title in glob.glob("*"+"さよならの朝に約束の花をかざろう"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\さよならの朝に約束の花をかざろう\\"
+    Rename()
+
+for title in glob.glob("*"+"憂国のモリアーティ"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\憂国のモリアーティ\\"
+    Rename()
+
+for title in glob.glob("*"+"ひとりぼっちの○○生活"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\ひとりぼっちの○○生活\\"
+    Rename()
+
+for title in glob.glob("*"+"舟を編む"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\舟を編む\\"
+    Rename()
+
+for title in glob.glob("*"+"revisions"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\revisions\\"
+    Rename()
+
+for title in glob.glob("*"+"僕らはみんな河合荘"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\僕らはみんな河合荘\\"
+    Rename()
+
+for title in glob.glob("*"+"文豪ストレイドッグス"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\文豪ストレイドッグス\\"
+    Rename()
