@@ -104,9 +104,6 @@ path6 = r"D:\TV(h.265)\ANIMAX MUSIX"
 # os.chdir(path6)
 Rename()
 
-with open(path, encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-
 with open(r"C:\prog\git\rename\1999.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
