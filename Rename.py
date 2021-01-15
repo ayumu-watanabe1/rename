@@ -96,7 +96,7 @@ def Rename():
             changetitle = re.sub("＜アニメギルド＞", "", title)
             changetitle = re.sub("アニメ", "", changetitle)
             RENAME_TRY(title, changetitle)
-        
+
         if re.search("キッズステーション", title):
             changetitle = re.sub("キッズステーション", "KIDS", title)
             RENAME_TRY(title, changetitle)
@@ -150,7 +150,7 @@ path3 = r"D:\TV(h.265)\夏目友人帳シリーズ\夏目友人帳"
 path4 = r"D:\TV(h.265)\夏目友人帳シリーズ\夏目友人帳 陸"
 path5 = r"D:\TV(h.265)\夏目友人帳シリーズ\続 夏目友人帳"
 path6 = r"D:\TV(h.265)\ANIMAX MUSIX"
-#os.chdir(path6)
+# os.chdir(path6)
 Rename()
 
 with open(path, encoding="utf-8") as f:
@@ -247,11 +247,18 @@ with open(r"C:\prog\git\rename\2019.txt", encoding="utf-8") as f:
         searchfolder(0, 100, "2019")
     except:
         pass
-    
+
 with open(r"C:\prog\git\rename\2020.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 200, "2020")
     except:
         pass
-    
+
+
+with open(r"C:\prog\git\rename\2021.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 200, "2021")
+    except:
+        pass
