@@ -9,55 +9,6 @@ import os
 import glob
 import re
 
-s_1999 = 1
-e_1999 = s_1999+1
-
-s_2000 = e_1999+1
-e_2000 = s_2000+1
-
-s_2001 = e_2000+1
-e_2001 = s_2001+2
-
-s_2002 = e_2001+1
-e_2002 = s_2002+0
-
-s_2003 = e_2002+1
-e_2003 = s_2003+0
-
-s_2004 = e_2003+1
-e_2004 = s_2004+2
-
-s_2005 = e_2004+1
-e_2005 = s_2005+1
-
-s_2006 = e_2005+1
-e_2006 = s_2006+5
-
-s_2007 = e_2006+1
-e_2007 = s_2007+2
-
-s_2008 = e_2007+1
-e_2008 = s_2008+3
-
-s_2009 = e_2008+1
-e_2009 = s_2009+5
-
-s_2010 = e_2009+1
-e_2010 = s_2010+8
-
-s_2011 = e_2010+1
-e_2011 = s_2011+10
-
-s_2012 = e_2011+1
-e_2012 = s_2012+9
-
-s_2013 = e_2012+1
-e_2013 = s_2013+5
-
-s_2014 = e_2013+1
-e_2014 = s_2014+18
-
-path = r"C:\prog\git\rename\フォルダ一覧(py).txt"
 path1 = "D:\\TV(h.265)"
 
 print("これからファイルを移動しますが、既に存在した場合　削除　しますか？ yesかnoで\n")
@@ -156,27 +107,74 @@ Rename()
 with open(path, encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
 
-    searchfolder(s_1999, e_1999, "1999")
+with open(r"C:\prog\git\rename\1999.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 100, "1999")
+    except:
+        pass
 
-    searchfolder(s_2000, e_2000, "2000")
+with open(r"C:\prog\git\rename\2000.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 100, "2000")
+    except:
+        pass
+with open(r"C:\prog\git\rename\2001.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 100, "2001")
+    except:
+        pass
+with open(r"C:\prog\git\rename\2002.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 100, "2002")
+    except:
+        pass
+with open(r"C:\prog\git\rename\2003.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 100, "2003")
+    except:
+        pass
+with open(r"C:\prog\git\rename\2004.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 100, "2004")
+    except:
+        pass
+with open(r"C:\prog\git\rename\2005.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 100, "2005")
+    except:
+        pass
+with open(r"C:\prog\git\rename\2006.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 100, "2006")
+    except:
+        pass
+with open(r"C:\prog\git\rename\2007.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 100, "2007")
+    except:
+        pass
+with open(r"C:\prog\git\rename\2008.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 100, "2008")
+    except:
+        pass
+with open(r"C:\prog\git\rename\2009.txt", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        searchfolder(0, 100, "2009")
+    except:
+        pass
 
-    searchfolder(s_2001, e_2001, "2001")
-
-    searchfolder(s_2002, e_2002, "2002")
-
-    searchfolder(s_2003, e_2003, "2003")
-
-    searchfolder(s_2004, e_2004, "2004")
-
-    searchfolder(s_2005, e_2005, "2005")
-
-    searchfolder(s_2006, e_2006, "2006")
-
-    searchfolder(s_2007, e_2007, "2007")
-
-    searchfolder(s_2008, e_2008, "2008")
-
-    searchfolder(s_2009, e_2009, "2009")
 
 with open(r"C:\prog\git\rename\2010.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
