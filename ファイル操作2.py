@@ -55,24 +55,25 @@ def foldercpy(start, end, year):
             title2 = os.path.join(path1, os.path.join(year, l[num]))
 
             print(title+"をコピーします")
-            if (os.path.isdir(title2) == False): #ファイルが存在しない場合実行する
+            if (os.path.isdir(title2) == False):  # ファイルが存在しない場合実行する
                 try:
                     command2 = ["powershell", "-command", "New-Item",
-                                "'"+title2+"'","-Type","Directory"]
-                    subprocess.check_call(command2,shell=True)
+                                "'"+title2+"'", "-Type", "Directory"]
+                    subprocess.check_call(command2, shell=True)
                 except:
                     pass
             try:
-                command = ["powershell","-Command","Move-Item","'"+title+"\\*'","'"+title2+"'"]
+                command = ["powershell", "-Command", "Move-Item",
+                           "'"+title+"\\*'", "'"+title2+"'"]
                 command1 = ["powershell", "-Command", "rm",
-                           "'"+title+"'"]
+                            "'"+title+"'"]
                 subprocess.check_call(command, shell=True)
                 subprocess.check_call(command1, shell=True)
             except:
                 print("move-item error")
-            #new_path = dir_util.copy_tree(title, title2)  # フォルダコピー
-            #print(new_path)
-            #shutil.rmtree(title)  # 元のフォルダ削除
+            # new_path = dir_util.copy_tree(title, title2)  # フォルダコピー
+            # print(new_path)
+            # shutil.rmtree(title)  # 元のフォルダ削除
 
 
 with open(path, "r", encoding="utf-8") as f:
@@ -176,5 +177,12 @@ with open(r"C:\prog\git\rename\2020.txt", "r", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         foldercpy(0, 150, "2020")
+    except:
+        pass
+
+with open(r"C:\prog\git\rename\2021.txt", "r", encoding="utf-8") as f:
+    l = [s.strip() for s in f.readlines()]
+    try:
+        foldercpy(0, 150, "2021")
     except:
         pass
