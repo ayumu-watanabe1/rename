@@ -3,7 +3,7 @@ import shutil
 import os
 import re
 
-path = "E:\\TV(h.265)\\ドラマ\\"
+path = "D:\\TV(h.265)\\ドラマ\\"
 os.chdir(path)
 
 print("これからファイルを移動しますが、既に存在した場合　削除　しますか？ yesかnoで\n")
@@ -29,30 +29,36 @@ def Rename():
 
 for title in glob.glob("*"+"半沢直樹"+"*"):
 
-    new_dir_path = "E:\\TV(h.265)\\日曜劇場 半沢直樹\\"
+    new_dir_path = "D:\\TV(h.265)\\日曜劇場 半沢直樹\\"
 
     Rename()
 
 for title in glob.glob("*"+"妖怪シェアハウス"+"*"):
 
-    new_dir_path = "E:\\TV(h.265)\\妖怪シェアハウス\\"
+    new_dir_path = "D:\\TV(h.265)\\妖怪シェアハウス\\"
 
     Rename()
 
 for title in glob.glob("*"+"MIU404"+"*"):
 
-    new_dir_path = "E:\\TV(h.265)\\MIU404\\"
+    new_dir_path = "D:\\TV(h.265)\\ドラマ\\MIU404\\"
 
     Rename()
 
 for title in glob.glob("*"+"DIVER"+"*"):
 
-    new_dir_path = "E:\\TV(h.265)\\DIVER-特殊潜入班-\\"
+    new_dir_path = "D:\\TV(h.265)\\ドラマ\\DIVER-特殊潜入班-\\"
 
     Rename()
 
 for title in glob.glob("*"+"35歳の少女"+"*"):
 
-    new_dir_path = "E:\\TV(h.265)\\35歳の少女\\"
+    new_dir_path = "D:\\TV(h.265)\\ドラマ\\35歳の少女\\"
+
+    Rename()
+
+for title in glob.glob("*"+"極主夫道"+"*"):
+
+    new_dir_path = "D:\\TV(h.265)\\ドラマ\\極主夫道\\"
 
     Rename()
