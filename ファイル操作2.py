@@ -31,7 +31,7 @@ def foldercpy(start, end, year):
                     pass
             try:
                 command = ["powershell", "-Command", "Move-Item",
-                           "'"+title+"\\*'", "'"+title2+"'"]
+                           "'"+title+"\\*'", "'"+title2+"\\'"]
                 command1 = ["powershell", "-Command", "rm",
                             "'"+title+"'"]
                 subprocess.check_call(command, shell=True)
