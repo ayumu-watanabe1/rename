@@ -120,68 +120,68 @@ path6 = r"D:\TV(h.265)\ANIMAX MUSIX"
 # os.chdir(path6)
 Rename()
 
-with open(r"C:\prog\git\rename\1999.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\1999.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "1999")
     except:
         pass
 
-with open(r"C:\prog\git\rename\2000.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2000.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2000")
     except:
         pass
-with open(r"C:\prog\git\rename\2001.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2001.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2001")
     except:
         pass
-with open(r"C:\prog\git\rename\2002.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2002.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2002")
     except:
         pass
-with open(r"C:\prog\git\rename\2003.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2003.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2003")
     except:
         pass
-with open(r"C:\prog\git\rename\2004.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2004.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2004")
     except:
         pass
-with open(r"C:\prog\git\rename\2005.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2005.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2005")
     except:
         pass
-with open(r"C:\prog\git\rename\2006.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2006.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2006")
     except:
         pass
-with open(r"C:\prog\git\rename\2007.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2007.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2007")
     except:
         pass
-with open(r"C:\prog\git\rename\2008.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2008.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2008")
     except:
         pass
-with open(r"C:\prog\git\rename\2009.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2009.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2009")
@@ -189,77 +189,77 @@ with open(r"C:\prog\git\rename\2009.txt", encoding="utf-8") as f:
         pass
 
 
-with open(r"C:\prog\git\rename\2010.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2010.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2010")
     except:
         pass
 
-with open(r"C:\prog\git\rename\2011.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2011.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2011")
     except:
         pass
 
-with open(r"C:\prog\git\rename\2012.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2012.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2012")
     except:
         pass
 
-with open(r"C:\prog\git\rename\2013.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2013.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2013")
     except:
         pass
 
-with open(r"C:\prog\git\rename\2014.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2014.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2014")
     except:
         pass
 
-with open(r"C:\prog\git\rename\2015.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2015.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2015")
     except:
         pass
 
-with open(r"C:\prog\git\rename\2016.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2016.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2016")
     except:
         pass
 
-with open(r"C:\prog\git\rename\2017.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2017.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2017")
     except:
         pass
 
-with open(r"C:\prog\git\rename\2018.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2018.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2018")
     except:
         pass
 
-with open(r"C:\prog\git\rename\2019.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2019.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 100, "2019")
     except:
         pass
 
-with open(r"C:\prog\git\rename\2020.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2020.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 200, "2020")
@@ -267,7 +267,7 @@ with open(r"C:\prog\git\rename\2020.txt", encoding="utf-8") as f:
         pass
 
 
-with open(r"C:\prog\git\rename\2021.txt", encoding="utf-8") as f:
+with open(r"F:\git\rename\2021.txt", encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
         searchfolder(0, 200, "2021")
