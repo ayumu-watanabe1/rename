@@ -10,6 +10,7 @@ import glob
 import re
 
 path1 = "E:\\TV"
+#path1=r"D:\TV_data"
 
 #print("これからファイルを移動しますが、既に存在した場合　削除　しますか？ yesかnoで\n")
 delete = "0"

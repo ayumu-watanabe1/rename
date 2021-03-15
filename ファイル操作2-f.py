@@ -10,7 +10,7 @@ from distutils import dir_util
 
 
 path1 = "E:\\TV"
-
+#path1=r"D:\TV_data"
 
 def foldercpy(start, end, year):
     for num in range(start, end):  # path生成
