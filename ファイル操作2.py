@@ -9,7 +9,7 @@ import subprocess
 from distutils import dir_util
 
 
-path1 = "D:\\TV(h.265)"
+path1 = 'D:/TV(h.265)'
 
 
 def foldercpy(start, end, year):
@@ -43,168 +43,13 @@ def foldercpy(start, end, year):
             # shutil.rmtree(title)  # 元のフォルダ削除
 
 
-with open(r"F:\git\rename\1999.txt", "r", encoding="utf-8") as f:
+openPath = 'F:/git/rename/dataset/'
+startYear, endYear = 1999, 2021
+
+for i in range(endYear - startYear + 1):
+    with open(openPath+str(startYear+i)+'.txt', encoding="utf-8") as f:
     l = [s.strip() for s in f.readlines()]
     try:
-        foldercpy(0, 150, "1999")
-    except:
-        pass
-
-with open(r"F:\git\rename\2000.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2000")
-    except:
-        pass
-
-with open(r"F:\git\rename\2001.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2001")
-    except:
-        pass
-
-with open(r"F:\git\rename\2002.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2002")
-    except:
-        pass
-
-with open(r"F:\git\rename\2003.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2003")
-    except:
-        pass
-
-with open(r"F:\git\rename\2004.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2004")
-    except:
-        pass
-
-
-with open(r"F:\git\rename\2005.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2005")
-    except:
-        pass
-
-with open(r"F:\git\rename\2006.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2006")
-    except:
-        pass
-
-with open(r"F:\git\rename\2007.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2007")
-    except:
-        pass
-
-with open(r"F:\git\rename\2008.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2008")
-    except:
-        pass
-
-
-with open(r"F:\git\rename\2009.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2009")
-    except:
-        pass
-
-
-with open(r"F:\git\rename\2010.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2010")
-    except:
-        pass
-
-with open(r"F:\git\rename\2011.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2011")
-    except:
-        pass
-
-with open(r"F:\git\rename\2012.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2012")
-    except:
-        pass
-
-with open(r"F:\git\rename\2013.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2013")
-    except:
-        pass
-
-with open(r"F:\git\rename\2014.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2014")
-    except:
-        pass
-
-
-with open(r"F:\git\rename\2015.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2015")
-    except:
-        pass
-
-with open(r"F:\git\rename\2016.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2016")
-    except:
-        pass
-
-with open(r"F:\git\rename\2017.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2017")
-    except:
-        pass
-
-with open(r"F:\git\rename\2018.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2018")
-    except:
-        pass
-
-
-with open(r"F:\git\rename\2019.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 100, "2019")
-    except:
-        pass
-
-with open(r"F:\git\rename\2020.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 150, "2020")
-    except:
-        pass
-
-with open(r"F:\git\rename\2021.txt", "r", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        foldercpy(0, 150, "2021")
+        foldercpy(0, 150, str(startYear+i))
     except:
         pass
