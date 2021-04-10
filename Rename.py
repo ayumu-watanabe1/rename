@@ -19,7 +19,7 @@ else:
     delete = "0"
 
 
-def RENAME_TRY(title, changetitle):
+def rename_try(title, changetitle):
     try:
         os.rename(title, changetitle)
         print(title+"から"+changetitle+"へ変更しました。\n")
@@ -34,15 +34,15 @@ def RENAME_TRY(title, changetitle):
             print("Error:"+title+"は既に存在するため処理がスキップされました。\n")
 
 
-def Rename():
-    """ 関数RENAME_TRY に変更する名前を引数として渡す """
+def rename():
+    """ 関数rename_try に変更する名前を引数として渡す """
     for title in glob.glob("*.mp4"):
 
         if re.search("[0-9]{12}", title):
 
             changetitle = re.sub("^[0-9]{12}_", "", title)
             changetitle = re.sub("^[0-9]{12} ", "", changetitle)
-            RENAME_TRY(title, changetitle)
+            rename_try(title, changetitle)
 
         renameList = [ # 正規表現であることに注意
             [r'^＜アニメギルド＞|アニメ$', ''],
@@ -64,7 +64,7 @@ def Rename():
             if re.search(renameList[i], title):
                 newn = renameList[i]; # [検索と置換前の名前, 置換後]
                 changetitle = re.sub(newn[0], newn[1], title)
-                RENAME_TRY(title, changetitle)
+                rename_try(title, changetitle)
 
         if re.search("^「", title):
             changetitle = re.sub("^「", "", title)
@@ -73,14 +73,14 @@ def Rename():
             changetitle = re.sub("  ", " ", changetitle)
             changetitle = re.sub("   ", " ", changetitle)
 
-            RENAME_TRY(title, changetitle)
+            rename_try(title, changetitle)
 
 
 def searchfolder(start, end, year):
     for num in range(start, end):  # path生成
         try:
             os.chdir(os.path.join(path1, os.path.join(year, l[num])))
-            Rename()
+            rename()
         except WindowsError:
             pass
 
@@ -91,7 +91,7 @@ path4 = 'D:/TV(h.265)/夏目友人帳シリーズ/夏目友人帳 陸'
 path5 = 'D:/TV(h.265)/夏目友人帳シリーズ/続 夏目友人帳'
 path6 = 'D:/TV(h.265)/ANIMAX MUSIX'
 # os.chdir(path6)
-Rename()
+rename()
 
 openPath = 'F:/git/rename/dataset/'
 startYear, endYear = 1999, 2021
