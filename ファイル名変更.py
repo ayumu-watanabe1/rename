@@ -11,7 +11,7 @@ else:
     delete = "0"
 
 
-def Rename():
+def rename(title, new_dir_path):
     if(os.path.exists(new_dir_path) == False):
         os.mkdir(new_dir_path)
     try:
@@ -27,693 +27,147 @@ def Rename():
 path = "D:\\TV(h.265)\\アニメ／特撮\\"
 os.chdir(path)
 
-for title in glob.glob("*"+"さくら荘"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\さくら荘のペットな彼女\\"
-    Rename()
-
-for title in glob.glob("*"+"転生したらスライムだった件"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\転生したらスライムだった件\\"
-    Rename()
-
-for title in glob.glob("*"+"俺を好きなのはお前だけかよ"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\俺を好きなのはお前だけかよ\\"
-    Rename()
-
-for title in glob.glob("*"+"月刊少女野崎くん"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\月刊少女野崎くん\\"
-    Rename()
-
-for title in glob.glob("*"+"ソマリと森の神様"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ソマリと森の神様\\"
-    Rename()
-
-
-for title in glob.glob("*"+"ライフル・イズ・ビューティフル"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ライフル・イズ・ビューティフル\\"
-    Rename()
-
-
-for title in glob.glob("*"+"バクマン。1st Series"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\バクマン。(第1シリーズ)\\"
-    Rename()
-
-for title in glob.glob("*"+"バクマン。2nd Series"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\バクマン。(第2シリーズ)\\"
-    Rename()
-
-for title in glob.glob("*"+"バクマン。3rd Series"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\バクマン。(第3シリーズ)\\"
-    Rename()
-
-
-for title in glob.glob("*"+"ぼくたちは勉強ができない!"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ぼくたちは勉強ができない！\\"
-    Rename()
-
-
-for title in glob.glob("*"+"アウトブレイク・カンパニー"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\アウトブレイク・カンパニー\\"
-    Rename()
-
-
-for title in glob.glob("*"+"ぼくたちは勉強ができない"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ぼくたちは勉強ができない\\"
-    Rename()
-
-
-for title in glob.glob("*"+"りゅうおうのおしごと!"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\りゅうおうのおしごと！\\"
-    Rename()
-
-
-for title in glob.glob("*"+"ソウナンですか？"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ソウナンですか？\\"
-    Rename()
-
-
-for title in glob.glob("*"+"生徒会役員共＊"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\生徒会役員共＊\\"
-    Rename()
-
-
-for title in glob.glob("*"+"からかい上手の高木さん"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\からかい上手の高木さん\\"
-    Rename()
-
-
-for title in glob.glob("*"+"五等分の花嫁"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\五等分の花嫁\\"
-    Rename()
-
-
-for title in glob.glob("*"+"らき☆すたOVA"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\らき☆すたOVA\\"
-    Rename()
-
-
-for title in glob.glob("*"+"らき☆すた"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\らき☆すた\\"
-    Rename()
-
-
-for title in glob.glob("*"+"無彩限の"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\無彩限のファントム・ワールド\\"
-    Rename()
-
-
-for title in glob.glob("*"+"続 夏目友人帳"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\夏目友人帳シリーズ\\続 夏目友人帳\\"
-    Rename()
-
-
-for title in glob.glob("*"+"夏目友人帳 参"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\夏目友人帳シリーズ\\夏目友人帳 参\\"
-    Rename()
-
-
-for title in glob.glob("*"+"夏目友人帳 肆"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\夏目友人帳シリーズ\\夏目友人帳 肆\\"
-    Rename()
-
-
-for title in glob.glob("*"+"夏目友人帳 伍"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\夏目友人帳シリーズ\\夏目友人帳 伍\\"
-    Rename()
-
-
-for title in glob.glob("*"+"夏目友人帳"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\夏目友人帳シリーズ"
-    Rename()
-
-for title in glob.glob("*"+"けいおん!!"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\けいおん！！\\"
-    Rename()
-
-
-for title in glob.glob("*"+"けいおん!"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\けいおん！\\"
-    Rename()
-
-
-for title in glob.glob("*"+"デカダンス"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\デカダンス\\"
-    Rename()
-
-
-for title in glob.glob("*"+"ゆるゆり"+"なちゅやちゅみ!+"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ゆるゆり なちゅやちゅみ！＋\\"
-    Rename()
-
-
-for title in glob.glob("*"+"ゆるゆり"+"なちゅやちゅみ!"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ゆるゆり なちゅやちゅみ！\\"
-    Rename()
-
-for title in glob.glob("*"+"ゆるゆり"+"さん☆ハイ"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ゆるゆり さん☆ハイ！\\"
-    Rename()
-
-
-for title in glob.glob("*"+"ゆるゆり"+"、"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ゆるゆり、\\"
-    Rename()
-
-
-for title in glob.glob("*"+"ゆるゆり"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ゆるゆり\\"
-    Rename()
-
-
-for title in glob.glob("*"+"ブギーポップは笑わない"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ブギーポップは笑わない\\"
-    Rename()
-
-
-for title in glob.glob("*"+"HUNTER×HUNTER"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\HUNTER×HUNTER(2011)\\"
-    Rename()
-
-for title in glob.glob("*"+"ランウェイで笑って"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ランウェイで笑って\\"
-    Rename()
-
-for title in glob.glob("*"+"あの日見た花の名前"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\あの日見た花の名前を僕達はまだ知らない。\\"
-    Rename()
-
-for title in glob.glob("*"+"ありふれた職業で"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ありふれた職業で世界最強\\"
-    Rename()
-
-for title in glob.glob("*"+"理系が恋に落ちた"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\理系が恋に落ちたので証明してみた。\\"
-    Rename()
-
-for title in glob.glob("*"+"異世界チート魔術師"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\異世界チート魔術師\\"
-    Rename()
-
-for title in glob.glob("*"+"ブギーポップは笑わない"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ブギーポップは笑わない\\"
-    Rename()
-
-for title in glob.glob("*"+"異種族レビュアーズ"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\異種族レビュアーズ\\"
-    Rename()
-
-for title in glob.glob("*"+"エグゼロス"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ド級編隊エグゼロス\\"
-    Rename()
-
-for title in glob.glob("*"+"ピーター・グリルと"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ピーター・グリルと賢者の時間\\"
-    Rename()
-
-for title in glob.glob("*"+"虚構推理"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\虚構推理\\"
-    Rename()
-
-for title in glob.glob("*"+"戦姫絶唱シンフォギアXV"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\戦姫絶唱シンフォギアXV\\"
-    Rename()
-
-for title in glob.glob("*"+"まちカドまぞく"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\まちカドまぞく\\"
-    Rename()
-
-for title in glob.glob("*"+"ダンベル何キロ持てる？"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ダンベル何キロ持てる？\\"
-    Rename()
-
-for title in glob.glob("*"+"邪神ちゃんドロップキック'"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\邪神ちゃんドロップキック'\\"
-    Rename()
-
-for title in glob.glob("*"+"慎重勇者～この勇者が俺TUEEEくせに慎重すぎる～"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\慎重勇者～この勇者が俺TUEEEくせに慎重すぎる～\\"
-    Rename()
-
-for title in glob.glob("*"+"彼女、お借りします"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\彼女、お借りします\\"
-    Rename()
-
-for title in glob.glob("*"+"終物語"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\終物語\\"
-    Rename()
-
-for title in glob.glob("*"+"憑物語"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\憑物語\\"
-    Rename()
-
-for title in glob.glob("*"+"花子くん"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\地縛少年花子くん\\"
-    Rename()
-
-for title in glob.glob("*"+"ヲタクに恋は難しい"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ヲタクに恋は難しい\\"
-    Rename()
-
-for title in glob.glob("*"+"推しが武道館"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\推しが武道館いってくれたら死ぬ\\"
-    Rename()
-
-for title in glob.glob("*"+"神様になった日"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\神様になった日\\"
-    Rename()
-
-for title in glob.glob("*"+"GOD EATER"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\GOD EATER\\"
-    Rename()
-
-for title in glob.glob("*"+"ハイスコアガール"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ハイスコアガール\\"
-    Rename()
-
-for title in glob.glob("*"+"学園黙示録 HIGHSCHOOL"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\学園黙示録 HIGHSCHOOL OF THE DEAD\\"
-    Rename()
-
-for title in glob.glob("*"+"CLANNAD ～AFTER STORY～"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\CLANNAD ～AFTER STORY～\\"
-    Rename()
-
-for title in glob.glob("*"+"オーバーロードⅢ"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\オーバーロードIII\\"
-    Rename()
-
-for title in glob.glob("*"+"ノラと皇女と野良猫ハート"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ノラと皇女と野良猫ハート\\"
-    Rename()
-
-for title in glob.glob("*"+"胡蝶綺 ～若き信長～"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\胡蝶綺 ～若き信長～\\"
-    Rename()
-
-for title in glob.glob("*"+"バジャのスタジオ～バジャのみた海～"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\バジャのスタジオ～バジャのみた海～\\"
-    Rename()
-
-for title in glob.glob("*"+"上野さんは不器用"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\上野さんは不器用\\"
-    Rename()
-
-for title in glob.glob("*"+"あそびあそばせ"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\あそびあそばせ\\"
-    Rename()
-
-for title in glob.glob("*"+"へやキャン△"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\へやキャン△\\"
-    Rename()
-
-for title in glob.glob("*"+"Lapis Re：LiGHTs"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\Lapis Re：LiGHTs ラピスリライツ\\"
-    Rename()
-
-for title in glob.glob("*"+"となりの吸血鬼さん"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\となりの吸血鬼さん\\"
-    Rename()
-
-for title in glob.glob("*"+"NOBLESSE -ノブレス-"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\NOBLESSE -ノブレス-\\"
-    Rename()
-
-for title in glob.glob("*"+"犬夜叉 完結編"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\犬夜叉 完結編\\"
-    Rename()
-
-for title in glob.glob("*"+"織田信奈の野望"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\織田信奈の野望\\"
-    Rename()
-
-for title in glob.glob("*"+"OVA かのこん～真夏の大謝肉祭～"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\かのこん ～真夏の大謝肉祭～\\"
-    Rename()
-
-for title in glob.glob("*"+"聖痕のクェイサーII"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\聖痕のクェイサーII\\"
-    Rename()
-
-for title in glob.glob("*"+"世話やきキツネの仙狐さん"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\世話やきキツネの仙狐さん\\"
-    Rename()
-
-for title in glob.glob("*"+"痛いのは嫌なので防御力に極振りしたいと思います。"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\痛いのは嫌なので防御力に極振りしたいと思います。\\"
-    Rename()
-
-for title in glob.glob("*"+"八男って、それはないでしょう"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\八男って、それはないでしょう！\\"
-    Rename()
-
-for title in glob.glob("*"+"くまクマ熊ベアー"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\くまクマ熊ベアー\\"
-    Rename()
-
-for title in glob.glob("*"+"100万の命の上に俺は立っている"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\100万の命の上に俺は立っている\\"
-    Rename()
-
-for title in glob.glob("*"+"いわかける!"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\いわかける！ -Sport Climbing Girls-\\"
-    Rename()
-
-for title in glob.glob("*"+"アクダマドライブ"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\アクダマドライブ\\"
-    Rename()
-
-for title in glob.glob("*"+"キングスレイド 意志を継ぐものたち"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\キングスレイド 意志を継ぐものたち\\"
-    Rename()
-
-for title in glob.glob("*"+"鬼滅の刃"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\鬼滅の刃\\"
-    Rename()
-
-for title in glob.glob("*"+"かぐや様は告らせたい～天才たちの恋愛頭脳戦～"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\かぐや様は告らせたい～天才たちの恋愛頭脳戦～\\"
-    Rename()
-
-for title in glob.glob("*"+"ANIMAX MUSIX"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ANIMAX MUSIX\\"
-    Rename()
-
-for title in glob.glob("*"+"ガーリー・エアフォース"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ガーリー・エアフォース\\"
-    Rename()
-
-for title in glob.glob("*"+"体操ザムライ"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\体操ザムライ\\"
-    Rename()
-
-for title in glob.glob("*"+"トニカクカワイイ"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\トニカクカワイイ\\"
-    Rename()
-
-for title in glob.glob("*"+"やはり俺の青春ラブコメはまちがっている。完"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\やはり俺の青春ラブコメはまちがっている。完\\"
-    Rename()
-
-for title in glob.glob("*"+"異能バトルは日常系のなかで"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\異能バトルは日常系のなかで\\"
-    Rename()
-
-for title in glob.glob("*"+"Re：ゼロから始める異世界生活 氷結の絆"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\Re：ゼロから始める異世界生活 氷結の絆\\"
-    Rename()
-
-for title in glob.glob("*"+"デート・ア・ライブ"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\デート・ア・ライブ\\"
-    Rename()
-
-for title in glob.glob("*"+"アサシンズプライド"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\アサシンズプライド\\"
-    Rename()
-
-for title in glob.glob("*"+"魔王様、リトライ"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\魔王様、リトライ\\"
-    Rename()
-
-for title in glob.glob("*"+"戦×恋(ヴァルラヴ)"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\戦×恋(ヴァルラヴ)\\"
-    Rename()
-
-for title in glob.glob("*"+"アホガール"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\アホガール\\"
-    Rename()
-
-for title in glob.glob("*"+"中二病でも恋がしたい！"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\中二病でも恋がしたい！\\"
-    Rename()
-
-for title in glob.glob("*"+"ゆるキャン△"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ゆるキャン△\\"
-    Rename()
-
-for title in glob.glob("*"+"結界師"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\結界師\\"
-    Rename()
-
-for title in glob.glob("*"+"ヨスガノソラ"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ヨスガノソラ\\"
-    Rename()
-
-for title in glob.glob("*"+"フェアリーゴーン"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\Fairy gone フェアリーゴーン\\"
-    Rename()
-
-for title in glob.glob("*"+"政宗くんのリベンジ"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\政宗くんのリベンジ\\"
-    Rename()
-
-for title in glob.glob("*"+"キミと僕の最後の戦場、あるいは世界が始まる聖戦"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\キミと僕の最後の戦場、あるいは世界が始まる聖戦\\"
-    Rename()
-
-for title in glob.glob("*"+"日曜アニメ劇場"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\日曜アニメ劇場\\"
-    Rename()
-
-for title in glob.glob("*"+"トクナナ"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\警視庁 特務部 特殊凶悪犯対策室 第七課 -トクナナ-\\"
-    Rename()
-
-for title in glob.glob("*"+"賢者の孫"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\賢者の孫\\"
-    Rename()
-
-for title in glob.glob("*"+"トリニティセブン"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\トリニティセブン\\"
-    Rename()
-
-for title in glob.glob("*"+"うちのメイドがウザすぎる"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\うちのメイドがウザすぎる!\\"
-    Rename()
-
-for title in glob.glob("*"+"バカとテストと召喚獣にっ"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\バカとテストと召喚獣にっ!\\"
-    Rename()
-
-for title in glob.glob("*"+"涼宮ハルヒの憂鬱"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\涼宮ハルヒの憂鬱\\"
-    Rename()
-
-for title in glob.glob("*"+"なんでここに先生が"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\なんでここに先生が！？\\"
-    Rename()
-
-for title in glob.glob("*"+"聖痕のクェイサー"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\聖痕のクェイサー\\"
-    Rename()
-
-for title in glob.glob("*"+"アサルトリリィ"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\アサルトリリィ BOUQUET\\"
-    Rename()
-
-for title in glob.glob("*"+"中二病でも恋がしたい!戀"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\中二病でも恋がしたい！戀\\"
-    Rename()
-
-for title in glob.glob("*"+"中二病でも恋がしたい!"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\中二病でも恋がしたい！\\"
-    Rename()
-
-for title in glob.glob("*"+"繰繰れ! コックリさん"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\繰繰れ！コックリさん\\"
-    Rename()
-
-for title in glob.glob("*"+"甘々と稲妻"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\甘々と稲妻\\"
-    Rename()
-
-for title in glob.glob("*"+"WHITE ALBUM"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\WHITE ALBUM\\"
-    Rename()
-
-for title in glob.glob("*"+"ダーウィンズゲーム"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ダーウィンズゲーム\\"
-    Rename()
-
-for title in glob.glob("*"+"衛宮さんちの今日のごはん"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\衛宮さんちの今日のごはん\\"
-    Rename()
-
-for title in glob.glob("*"+"デスマーチからはじまる異世界狂想曲"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\デスマーチからはじまる異世界狂想曲\\"
-    Rename()
-
-for title in glob.glob("*"+"刀使ノ巫女"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\刀使ノ巫女\\"
-    Rename()
-
-for title in glob.glob("*"+"金曜ロードSHOW!"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\金曜ロードSHOW！\\"
-    Rename()
-
-for title in glob.glob("*"+"おちこぼれフルーツタルト"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\おちこぼれフルーツタルト\\"
-    Rename()
-
-for title in glob.glob("*"+"池袋ウエストゲートパーク"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\池袋ウエストゲートパーク\\"
-    Rename()
-
-for title in glob.glob("*"+"さよならの朝に約束の花をかざろう"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\さよならの朝に約束の花をかざろう\\"
-    Rename()
-
-for title in glob.glob("*"+"憂国のモリアーティ"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\憂国のモリアーティ\\"
-    Rename()
-
-for title in glob.glob("*"+"ひとりぼっちの○○生活"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\ひとりぼっちの○○生活\\"
-    Rename()
-
-for title in glob.glob("*"+"舟を編む"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\舟を編む\\"
-    Rename()
-
-for title in glob.glob("*"+"revisions"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\revisions\\"
-    Rename()
-
-for title in glob.glob("*"+"僕らはみんな河合荘"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\僕らはみんな河合荘\\"
-    Rename()
-
-for title in glob.glob("*"+"文豪ストレイドッグス"+"*"):
-
-    new_dir_path = "D:\\TV(h.265)\\文豪ストレイドッグス\\"
-    Rename()
+basePath = 'D:/TV(h.265)'
+
+nameList = [
+    #
+    # Format [old Name, new Name]
+    #
+    ['さくら荘', 'さくら荘のペットな彼女'],
+    ['転生したらスライムだった件', '転生したらスライムだった件'],
+    ['俺を好きなのはお前だけかよ', '俺を好きなのはお前だけかよ'],
+    ['月刊少女野崎くん', '月刊少女野崎くん'],
+    ['ソマリと森の神様', 'ソマリと森の神様'],
+    ['ライフル・イズ・ビューティフル', 'ライフル・イズ・ビューティフル'],
+    ['バクマン。1st Series', 'バクマン。(第1シリーズ)'],
+    ['バクマン。2nd Series', 'バクマン。(第2シリーズ)'],
+    ['バクマン。3rd Series', 'バクマン。(第3シリーズ)'],
+    ['ぼくたちは勉強ができない!', 'ぼくたちは勉強ができない！'],
+    ['アウトブレイク・カンパニー', 'アウトブレイク・カンパニー'],
+    ['りゅうおうのおしごと!', 'りゅうおうのおしごと！'],
+    ['ソウナンですか？', 'ソウナンですか？'],
+    ['生徒会役員共＊', '生徒会役員共＊'],
+    ['からかい上手の高木さん', 'からかい上手の高木さん'],
+    ['五等分の花嫁', '五等分の花嫁'],
+    ['らき☆すたOVA', 'らき☆すたOVA'],
+    ['らき☆すた', 'らき☆すた'],
+    ['無彩限の', '無彩限のファントム・ワールド'],
+    ['続 夏目友人帳', '夏目友人帳シリーズ/続 夏目友人帳'],
+    ['夏目友人帳 参', '夏目友人帳シリーズ/夏目友人帳 参'],
+    ['夏目友人帳 肆', '夏目友人帳シリーズ/夏目友人帳 肆'],
+    ['夏目友人帳 伍', '夏目友人帳シリーズ/夏目友人帳 伍'],
+    ['夏目友人帳', '夏目友人帳シリーズ'],
+    ['けいおん!!', 'けいおん！！'],
+    ['けいおん!', 'けいおん！'],
+    ['デカダンス', 'デカダンス'],
+    ['ゆるゆりなちゅやちゅみ!+', 'ゆるゆり なちゅやちゅみ！＋'],
+    ['ゆるゆり"+"なちゅやちゅみ!', 'ゆるゆり なちゅやちゅみ！'],
+    ['ゆるゆりさん☆ハイ', 'ゆるゆり さん☆ハイ！'],
+    ['ゆるゆり、', 'ゆるゆり、'],
+    ['ゆるゆり', 'ゆるゆり'],
+    [r'ブギーポップは笑わない', r'ブギーポップは笑わない'],
+    ['HUNTER×HUNTER', 'HUNTER×HUNTER(2011)'],
+    ['ランウェイで笑って', 'ランウェイで笑って'],
+    ['あの日見た花の名前', 'あの日見た花の名前を僕達はまだ知らない。'],
+    ['ありふれた職業で', 'ありふれた職業で世界最強'],
+    ['理系が恋に落ちた', '理系が恋に落ちたので証明してみた。'],
+    ['異世界チート魔術師', '異世界チート魔術師'],
+    ['ブギーポップは笑わない', 'ブギーポップは笑わない'],
+    ['異種族レビュアーズ', '異種族レビュアーズ'],
+    ['エグゼロス', 'ド級編隊エグゼロス'],
+    ['ピーター・グリルと', 'ピーター・グリルと賢者の時間'],
+    ['虚構推理', '虚構推理'],
+    ['戦姫絶唱シンフォギアXV', '戦姫絶唱シンフォギアXV'],
+    ['まちカドまぞく', 'まちカドまぞく'],
+    ['ダンベル何キロ持てる？', 'ダンベル何キロ持てる？'],
+    ["邪神ちゃんドロップキック'", "邪神ちゃんドロップキック'"],
+    ['慎重勇者～この勇者が俺TUEEEくせに慎重すぎる～', '慎重勇者～この勇者が俺TUEEEくせに慎重すぎる～'],
+    ['彼女、お借りします', '彼女、お借りします'],
+    ['終物語', '終物語'],
+    ['憑物語', '憑物語'],
+    ['花子くん', '地縛少年花子くん'],
+    ['ヲタクに恋は難しい', 'ヲタクに恋は難しい'],
+    ['推しが武道館', '推しが武道館いってくれたら死ぬ'],
+    ['神様になった日', '神様になった日'],
+    ['GOD EATER', 'GOD EATER'],
+    ['ハイスコアガール', 'ハイスコアガール'],
+    ['学園黙示録 HIGHSCHOOL', '学園黙示録 HIGHSCHOOL OF THE DEAD'],
+    ['CLANNAD ～AFTER STORY～', 'CLANNAD ～AFTER STORY～'],
+    ['オーバーロードⅢ', 'オーバーロードIII'],
+    ['ノラと皇女と野良猫ハート', 'ノラと皇女と野良猫ハート'],
+    ['胡蝶綺 ～若き信長～', '胡蝶綺 ～若き信長～'],
+    ['バジャのスタジオ～バジャのみた海～', 'バジャのスタジオ～バジャのみた海～'],
+    ['上野さんは不器用', '上野さんは不器用'],
+    ['あそびあそばせ', 'あそびあそばせ'],
+    ['へやキャン△', 'へやキャン△'],
+    ['Lapis Re：LiGHTs', 'Lapis Re：LiGHTs ラピスリライツ'],
+    ['となりの吸血鬼さん', 'となりの吸血鬼さん'],
+    ['NOBLESSE -ノブレス-', 'NOBLESSE -ノブレス-'],
+    ['犬夜叉 完結編', '犬夜叉 完結編'],
+    ['織田信奈の野望', '織田信奈の野望'],
+    ['OVA かのこん～真夏の大謝肉祭～', 'かのこん ～真夏の大謝肉祭～'],
+    ['聖痕のクェイサーII', '聖痕のクェイサーII'],
+    ['世話やきキツネの仙狐さん', '世話やきキツネの仙狐さん'],
+    ['痛いのは嫌なので防御力に極振りしたいと思います。', '痛いのは嫌なので防御力に極振りしたいと思います。'],
+    ['八男って、それはないでしょう', '八男って、それはないでしょう'],
+    ['くまクマ熊ベアー', 'くまクマ熊ベアー'],
+    ['100万の命の上に俺は立っている', '100万の命の上に俺は立っている'],
+    ['いわかける!', 'いわかける！ -Sport Climbing Girls-'],
+    ['アクダマドライブ', 'アクダマドライブ'],
+    ['キングスレイド 意志を継ぐものたち', 'キングスレイド 意志を継ぐものたち'],
+    ['鬼滅の刃', '鬼滅の刃'],
+    ['かぐや様は告らせたい～天才たちの恋愛頭脳戦～', 'かぐや様は告らせたい～天才たちの恋愛頭脳戦～'],
+    ['ANIMAX MUSIX', 'ANIMAX MUSIX'],
+    ['ガーリー・エアフォース', 'ガーリー・エアフォース'],
+    ['体操ザムライ', '体操ザムライ'],
+    ['トニカクカワイイ', 'トニカクカワイイ'],
+    ['やはり俺の青春ラブコメはまちがっている。完', 'やはり俺の青春ラブコメはまちがっている。完'],
+    ['異能バトルは日常系のなかで', '異能バトルは日常系のなかで'],
+    ['Re：ゼロから始める異世界生活 氷結の絆', 'Re：ゼロから始める異世界生活 氷結の絆'],
+    ['デート・ア・ライブ', 'デート・ア・ライブ'],
+    ['アサシンズプライド', 'アサシンズプライド'],
+    ['魔王様、リトライ', '魔王様、リトライ'],
+    ['戦×恋(ヴァルラヴ)', '戦×恋(ヴァルラヴ)'],
+    ['アホガール', 'アホガール'],
+    [r'中二病でも恋がしたい！', '中二病でも恋がしたい！'],
+    ['ゆるキャン△', 'ゆるキャン△'],
+    ['結界師', '結界師'],
+    ['ヨスガノソラ', 'ヨスガノソラ'],
+    ['フェアリーゴーン', 'Fairy gone フェアリーゴーン'],
+    ['政宗くんのリベンジ', '政宗くんのリベンジ'],
+    ['キミと僕の最後の戦場、あるいは世界が始まる聖戦', 'キミと僕の最後の戦場、あるいは世界が始まる聖戦'],
+    ['日曜アニメ劇場', '日曜アニメ劇場'],
+    ['トクナナ', '警視庁 特務部 特殊凶悪犯対策室 第七課 -トクナナ-'],
+    ['賢者の孫', '賢者の孫'],
+    ['トリニティセブン', 'トリニティセブン'],
+    ['うちのメイドがウザすぎる', 'うちのメイドがウザすぎる'],
+    ['バカとテストと召喚獣にっ', 'バカとテストと召喚獣にっ!'],
+    ['涼宮ハルヒの憂鬱', '涼宮ハルヒの憂鬱'],
+    ['なんでここに先生が', 'なんでここに先生が'],
+    ['聖痕のクェイサー', '聖痕のクェイサー'],
+    ['アサルトリリィ', 'アサルトリリィ BOUQUET'],
+    ['中二病でも恋がしたい!戀', '中二病でも恋がしたい！戀'],
+    ['中二病でも恋がしたい!', '中二病でも恋がしたい！'],
+    ['繰繰れ! コックリさん', '繰繰れ! コックリさん'],
+    ['甘々と稲妻', '甘々と稲妻'],
+    ['WHITE ALBUM', 'WHITE ALBUM'],
+    ['ダーウィンズゲーム', 'ダーウィンズゲーム'],
+    ['衛宮さんちの今日のごはん', '衛宮さんちの今日のごはん'],
+    ['デスマーチからはじまる異世界狂想曲', 'デスマーチからはじまる異世界狂想曲'],
+    ['刀使ノ巫女', '刀使ノ巫女'],
+    ['金曜ロードSHOW!', '金曜ロードSHOW！'],
+    ['おちこぼれフルーツタルト', 'おちこぼれフルーツタルト'],
+    ['池袋ウエストゲートパーク', '池袋ウエストゲートパーク'],
+    ['さよならの朝に約束の花をかざろう', 'さよならの朝に約束の花をかざろう'],
+    ['憂国のモリアーティ', '憂国のモリアーティ'],
+    ['ひとりぼっちの○○生活', 'ひとりぼっちの○○生活'],
+    ['舟を編む', '舟を編む'],
+    ['revisions', 'revisions'],
+    ['僕らはみんな河合荘', '僕らはみんな河合荘'],
+    ['文豪ストレイドッグス', '文豪ストレイドッグス'],
+]
+for i in range(len(nameList)):
+    procList = nameList[i]
+    for title in glob.glob('*'+procList[0]+'*'):    # '*' + [old Name] + '*'
+        new_dir_path = basePath + procList[1] + '/' # [basePath] + [new Path] + '/'
+        rename(title, new_dir_path)
