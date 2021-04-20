@@ -25,15 +25,15 @@ def foldercpy(start, end, year):
             if (os.path.isdir(title2) == False):  # ファイルが存在しない場合実行する
                 try:
                     command2 = ["powershell", "-command", "New-Item",
-                                "'"+title2+"'", "-Type", "Directory"]
+                                '"'+title2+'"', "-Type", "Directory"]
                     subprocess.check_call(command2, shell=True)
                 except:
                     pass
             try:
                 command = ["powershell", "-Command", "Move-Item",
-                           "'"+title+"\\*'", "'"+title2+"\\'"]
+                           '"'+title+'\\*"', '"'+title2+'\\"']
                 command1 = ["powershell", "-Command", "rm",
-                            "'"+title+"'"]
+                            '"'+title+'"']
                 subprocess.check_call(command, shell=True)
                 subprocess.check_call(command1, shell=True)
             except:
