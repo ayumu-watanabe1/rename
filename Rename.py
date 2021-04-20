@@ -9,7 +9,7 @@ import os
 import glob
 import re
 
-path1 = "D:\\TV(h.265)"
+path1 = 'H:/TV(h.265)'
 
 print("これからファイルを移動しますが、既に存在した場合　削除　しますか？ yesかnoで\n")
 ans = input()
@@ -19,7 +19,7 @@ else:
     delete = "0"
 
 
-def RENAME_TRY(title, changetitle):
+def rename_try(title, changetitle):
     try:
         os.rename(title, changetitle)
         print(title+"から"+changetitle+"へ変更しました。\n")
@@ -34,64 +34,37 @@ def RENAME_TRY(title, changetitle):
             print("Error:"+title+"は既に存在するため処理がスキップされました。\n")
 
 
-def Rename():
+def rename():
+    """ 関数rename_try に変更する名前を引数として渡す """
     for title in glob.glob("*.mp4"):
 
         if re.search("[0-9]{12}", title):
 
             changetitle = re.sub("^[0-9]{12}_", "", title)
             changetitle = re.sub("^[0-9]{12} ", "", changetitle)
-            RENAME_TRY(title, changetitle)
+            rename_try(title, changetitle)
 
-        if re.search("＜アニメギルド＞", title):
-            changetitle = re.sub("＜アニメギルド＞", "", title)
-            changetitle = re.sub("アニメ", "", changetitle)
-            RENAME_TRY(title, changetitle)
+        renameList = [ # 正規表現であることに注意
+            [r'^＜アニメギルド＞|アニメ$', ''],
+            [r'^キッズステーション$', 'KIDS'],
+            [r'^TBSチャンネル$', 'TBS'],
+            [r'^日テレプラス$', '日テレ'],
+            [r'^BSアニマックス$', 'BS'],
+            [r'^TVアニメ$', ''],
+            [r'^＜夜の集中放送＞$', ''],
+            [r'^【無料】$', ''],
+            [r'^\[キッズステーション\]$', ''],
+            [r'^テレ朝チャンネル$', 'テレ朝'],
+            [r'^日テレプラス$', '日テレ'],
+            [r'^TBSチャンネル$', 'TBS'],
+        ]
 
-        if re.search("キッズステーション", title):
-            changetitle = re.sub("キッズステーション", "KIDS", title)
-            RENAME_TRY(title, changetitle)
-
-        if re.search("TBSチャンネル", title):
-            changetitle = re.sub("TBSチャンネル", "TBS", title)
-            RENAME_TRY(title, changetitle)
-
-        if re.search("日テレプラス", title):
-            changetitle = re.sub("日テレプラス", "日テレ", title)
-            RENAME_TRY(title, changetitle)
-
-        if re.search("BSアニマックス", title):
-            changetitle = re.sub("BSアニマックス", "BS", title)
-            RENAME_TRY(title, changetitle)
-
-        if re.search("TVアニメ", title):
-            changetitle = re.sub("TVアニメ", "", title)
-
-            RENAME_TRY(title, changetitle)
-
-        if re.search("＜夜の集中放送＞", title):
-            changetitle = re.sub("＜夜の集中放送＞", "", title)
-            RENAME_TRY(title, changetitle)
-
-        if re.search("【無料】", title):
-            changetitle = re.sub("【無料】", "", title)
-            RENAME_TRY(title, changetitle)
-
-        if re.search("キッズステーション", title):
-            changetitle = re.sub("[キッズステーション]", "", title)
-            RENAME_TRY(title, changetitle)
-
-        if re.search("テレ朝チャンネル", title):
-            changetitle = re.sub("テレ朝チャンネル", "テレ朝", title)
-            RENAME_TRY(title, changetitle)
-
-        if re.search("日テレプラス", title):
-            changetitle = re.sub("日テレプラス", "日テレ", title)
-            RENAME_TRY(title, changetitle)
-
-        if re.search("TBSチャンネル", title):
-            changetitle = re.sub("TBSチャンネル", "TBS", title)
-            RENAME_TRY(title, changetitle)
+        # renameList内の名前を置換
+        for i in range(len(renameList)):
+            if re.search(renameList[i], title):
+                newn = renameList[i]; # [検索と置換前の名前, 置換後]
+                changetitle = re.sub(newn[0], newn[1], title)
+                rename_try(title, changetitle)
 
         if re.search("^「", title):
             changetitle = re.sub("^「", "", title)
@@ -100,176 +73,33 @@ def Rename():
             changetitle = re.sub("  ", " ", changetitle)
             changetitle = re.sub("   ", " ", changetitle)
 
-            RENAME_TRY(title, changetitle)
+            rename_try(title, changetitle)
 
 
 def searchfolder(start, end, year):
     for num in range(start, end):  # path生成
         try:
             os.chdir(os.path.join(path1, os.path.join(year, l[num])))
-            Rename()
+            rename()
         except WindowsError:
             pass
 
 
-path2 = r"D:\TV(h.265)\映画"
-path3 = r"D:\TV(h.265)\夏目友人帳シリーズ\夏目友人帳"
-path4 = r"D:\TV(h.265)\夏目友人帳シリーズ\夏目友人帳 陸"
-path5 = r"D:\TV(h.265)\夏目友人帳シリーズ\続 夏目友人帳"
-path6 = r"D:\TV(h.265)\ANIMAX MUSIX"
+path2 = 'D:/TV(h.265)/映画'
+path3 = 'D:/TV(h.265)/夏目友人帳シリーズ/夏目友人帳'
+path4 = 'D:/TV(h.265)/夏目友人帳シリーズ/夏目友人帳 陸'
+path5 = 'D:/TV(h.265)/夏目友人帳シリーズ/続 夏目友人帳'
+path6 = 'D:/TV(h.265)/ANIMAX MUSIX'
 # os.chdir(path6)
-Rename()
+rename()
 
-with open(r"F:\git\rename\1999.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "1999")
-    except:
-        pass
+openPath = 'H:/rename/dataset/'
+startYear, endYear = 1999, 2021
 
-with open(r"F:\git\rename\2000.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2000")
-    except:
-        pass
-with open(r"F:\git\rename\2001.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2001")
-    except:
-        pass
-with open(r"F:\git\rename\2002.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2002")
-    except:
-        pass
-with open(r"F:\git\rename\2003.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2003")
-    except:
-        pass
-with open(r"F:\git\rename\2004.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2004")
-    except:
-        pass
-with open(r"F:\git\rename\2005.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2005")
-    except:
-        pass
-with open(r"F:\git\rename\2006.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2006")
-    except:
-        pass
-with open(r"F:\git\rename\2007.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2007")
-    except:
-        pass
-with open(r"F:\git\rename\2008.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2008")
-    except:
-        pass
-with open(r"F:\git\rename\2009.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2009")
-    except:
-        pass
-
-
-with open(r"F:\git\rename\2010.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2010")
-    except:
-        pass
-
-with open(r"F:\git\rename\2011.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2011")
-    except:
-        pass
-
-with open(r"F:\git\rename\2012.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2012")
-    except:
-        pass
-
-with open(r"F:\git\rename\2013.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2013")
-    except:
-        pass
-
-with open(r"F:\git\rename\2014.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2014")
-    except:
-        pass
-
-with open(r"F:\git\rename\2015.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2015")
-    except:
-        pass
-
-with open(r"F:\git\rename\2016.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2016")
-    except:
-        pass
-
-with open(r"F:\git\rename\2017.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2017")
-    except:
-        pass
-
-with open(r"F:\git\rename\2018.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2018")
-    except:
-        pass
-
-with open(r"F:\git\rename\2019.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 100, "2019")
-    except:
-        pass
-
-with open(r"F:\git\rename\2020.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 200, "2020")
-    except:
-        pass
-
-
-with open(r"F:\git\rename\2021.txt", encoding="utf-8") as f:
-    l = [s.strip() for s in f.readlines()]
-    try:
-        searchfolder(0, 200, "2021")
-    except:
-        pass
+for i in range(endYear - startYear + 1):
+    with open(openPath+str(startYear+i)+'.txt', encoding="utf-8") as f:
+        l = [s.strip() for s in f.readlines()]
+        try:
+            searchfolder(0, 150, str(startYear+i))
+        except: # この書き方は公式でもあまり推奨されません..
+            pass
