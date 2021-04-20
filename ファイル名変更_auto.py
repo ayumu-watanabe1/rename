@@ -20,10 +20,10 @@ def rename(title, new_dir_path):
             print("Error:"+title+"は既に存在するため処理がスキップされました。\n")
 
 
-path = "D:\\TV(h.265)\\アニメ／特撮\\"
+path = "H:\\TV(h.265)\\アニメ／特撮\\"
 os.chdir(path)
 
-basePath = 'D:/TV(h.265)/'
+basePath = 'H:/TV(h.265)/'
 
 nameList = [
     #
