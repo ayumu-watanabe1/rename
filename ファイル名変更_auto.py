@@ -20,10 +20,10 @@ def rename(title, new_dir_path):
             print("Error:"+title+"は既に存在するため処理がスキップされました。\n")
 
 
-path = "H:\\TV(h.265)\\アニメ／特撮\\"
+path = "D:\\TV(h.265)\\アニメ／特撮\\"
 os.chdir(path)
 
-basePath = 'H:/TV(h.265)/'
+basePath = 'D:/TV(h.265)/'
 
 nameList = [
     #
@@ -165,5 +165,6 @@ nameList = [
 for i in range(len(nameList)):
     procList = nameList[i]
     for title in glob.glob('*'+procList[0]+'*'):    # '*' + [old Name] + '*'
-        new_dir_path = basePath + procList[1] + '/' # [basePath] + [new Path] + '/'
+        # [basePath] + [new Path] + '/'
+        new_dir_path = basePath + procList[1] + '/'
         rename(title, new_dir_path)

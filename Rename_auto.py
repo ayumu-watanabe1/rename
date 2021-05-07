@@ -9,7 +9,7 @@ import os
 import glob
 import re
 
-path1 = 'H:/TV(h.265)'
+path1 = 'D:/TV(h.265)'
 #path1=r"D:\TV_data"
 
 #print("これからファイルを移動しますが、既に存在した場合　削除　しますか？ yesかnoで\n")
@@ -92,7 +92,7 @@ path6 = 'D:/TV(h.265)/ANIMAX MUSIX'
 # os.chdir(path6)
 Rename()
 
-openPath = 'H:/rename/dataset/'
+openPath = 'F:/git/rename/dataset/'
 startYear, endYear = 1999, 2021
 
 for i in range(endYear - startYear + 1):

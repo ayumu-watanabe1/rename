@@ -9,7 +9,7 @@ import subprocess
 from distutils import dir_util
 
 
-path1 = 'H:/TV(h.265)'
+path1 = 'D:/TV(h.265)'
 
 
 def foldercpy(start, end, year):
@@ -43,7 +43,7 @@ def foldercpy(start, end, year):
             # shutil.rmtree(title)  # 元のフォルダ削除
 
 
-openPath = 'H:/rename/dataset/'
+openPath = 'F:/git/rename/dataset/'
 startYear, endYear = 1999, 2021
 
 for i in range(endYear - startYear + 1):
