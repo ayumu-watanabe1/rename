@@ -8,9 +8,10 @@ import string
 import os
 import glob
 import re
+import SyoboiCal
 
 path1 = 'E:/TV'
-#path1=r"D:\TV_data"
+# path1=r"D:\TV_data"
 
 #print("これからファイルを移動しますが、既に存在した場合　削除　しますか？ yesかnoで\n")
 delete = "0"
@@ -42,7 +43,7 @@ def Rename():
             changetitle = re.sub("^[0-9]{12} ", "", changetitle)
             RENAME_TRY(title, changetitle)
 
-        renameList = [ # 正規表現であることに注意
+        renameList = [  # 正規表現であることに注意
             [r'^＜アニメギルド＞|アニメ$', ''],
             [r'^キッズステーション$', 'KIDS'],
             [r'^TBSチャンネル$', 'TBS'],
@@ -60,7 +61,7 @@ def Rename():
         # renameList内の名前を置換
         for i in range(len(renameList)):
             if re.search(renameList[i], title):
-                newn = renameList[i]; # [検索と置換前の名前, 置換後]
+                newn = renameList[i]  # [検索と置換前の名前, 置換後]
                 changetitle = re.sub(newn[0], newn[1], title)
                 RENAME_TRY(title, changetitle)
 
@@ -96,9 +97,9 @@ openPath = 'C:/prog/rename/dataset/'
 startYear, endYear = 1999, 2021
 
 for i in range(endYear - startYear + 1):
-    with open(openPath+str(startYear+i)+'.txt', encoding="utf-8") as f:
-        l = [s.strip() for s in f.readlines()]
-        try:
-            searchfolder(0, 100, str(startYear+i))
-        except: # この書き方は公式でもあまり推奨されません..
-            pass
+    l = []
+    l = SyoboiCal.search_title(startYear+i, i)
+    try:
+        searchfolder(0, 150, str(startYear+i))
+    except:  # この書き方は公式でもあまり推奨されません..
+        pass
