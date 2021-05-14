@@ -8,6 +8,7 @@ import string
 import os
 import glob
 import re
+import SyoboiCal
 
 path1 = 'D:/TV(h.265)'
 #path1=r"D:\TV_data"
@@ -96,9 +97,9 @@ openPath = 'F:/git/rename/dataset/'
 startYear, endYear = 1999, 2021
 
 for i in range(endYear - startYear + 1):
-    with open(openPath+str(startYear+i)+'.txt', encoding="utf-8") as f:
-        l = [s.strip() for s in f.readlines()]
-        try:
-            searchfolder(0, 100, str(startYear+i))
-        except: # この書き方は公式でもあまり推奨されません..
-            pass
+
+    l = SyoboiCal.search_title(startYear+i)
+    try:
+        searchfolder(0, 150, str(startYear+i))
+    except:  # この書き方は公式でもあまり推奨されません..
+        pass
