@@ -7,6 +7,7 @@ import os
 import glob
 import subprocess
 from distutils import dir_util
+import SyoboiCal
 
 
 path1 = 'E:/TV'
@@ -42,13 +43,15 @@ def foldercpy(start, end, year):
             # print(new_path)
             # shutil.rmtree(title)  # 元のフォルダ削除
 
-openPath = 'C:/prog/rename/dataset/'
+
+#openPath = 'C:/prog/rename/dataset/'
 startYear, endYear = 1999, 2021
 
 for i in range(endYear - startYear + 1):
-
-    l = SyoboiCal.search_title(startYear+i)
+    l = []
+    l = SyoboiCal.search_title(startYear+i, l)
     try:
-        searchfolder(0, 150, str(startYear+i))
+        foldercpy(0, 150, str(startYear+i))
+        #print(l)   #debug
     except:  # この書き方は公式でもあまり推奨されません..
         pass

@@ -97,8 +97,8 @@ openPath = 'C:/prog/rename/dataset/'
 startYear, endYear = 1999, 2021
 
 for i in range(endYear - startYear + 1):
-
-    l = SyoboiCal.search_title(startYear+i)
+    l = []
+    l = SyoboiCal.search_title(startYear+i, i)
     try:
         searchfolder(0, 150, str(startYear+i))
     except:  # この書き方は公式でもあまり推奨されません..
