@@ -29,7 +29,7 @@ for i in range(endYear - startYear + 1):
         AnimeList = [s.strip() for s in f.readlines()]
         try:
             Rename_func.searchfolder(
-                0, 150, str(startYear + i), path1, AnimeList)
+                0, 500, str(startYear + i), path1, AnimeList)
 
         except:  # この書き方は公式でもあまり推奨されません..
             pass
