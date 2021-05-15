@@ -1,10 +1,9 @@
 """
 TV(h.265)内にあるアニメフォルダーを放送年に合わせて移動するプログラムである。
 """
-from ..function import AnimeFolderMove
+import function.AnimeFolderMove as AnimeFolderMove
 
-path1 = 'E:/TV'
-#path1 = "D:\\TV_data"
+path1 = 'D:/TV(h.265)'
 
 openPath = '/dataset/'
 startYear, endYear = 1999, 2021

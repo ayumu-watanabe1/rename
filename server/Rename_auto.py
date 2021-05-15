@@ -3,7 +3,7 @@
 
 """
 import re
-from ..function import Rename_func
+import function.Rename_func as Rename_func
 
 path1 = 'D:/TV(h.265)'
 # path1=r"D:\TV_data"

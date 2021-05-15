@@ -1,6 +1,6 @@
 import os
 import re
-from ..function import MatchAnime
+import function.MatchAnime as MatchAnime
 
 delete = "0"
 

@@ -3,7 +3,8 @@ TV(h.265)内にあるアニメフォルダーを放送年に合わせて移動�
 """
 import function.AnimeFolderMove as AnimeFolderMove
 
-path1 = 'D:/TV(h.265)'
+path1 = 'E:/TV'
+#path1 = "D:\\TV_data"
 
 openPath = '/dataset/'
 startYear, endYear = 1999, 2021
