@@ -6,7 +6,7 @@ import function.AnimeFolderMove as AnimeFolderMove
 path1 = 'E:/TV'
 #path1 = "D:\\TV_data"
 
-openPath = '/dataset/'
+openPath = 'F:/git/rename/dataset/'
 startYear, endYear = 1999, 2021
 
 for i in range(endYear - startYear + 1):
