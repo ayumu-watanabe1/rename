@@ -94,7 +94,7 @@ path6 = 'D:/TV(h.265)/ANIMAX MUSIX'
 # os.chdir(path6)
 rename()
 
-#openPath = 'H:/rename/dataset/'
+openPath = '/dataset/'
 startYear, endYear = 1999, 2021
 
 for i in range(endYear - startYear + 1):

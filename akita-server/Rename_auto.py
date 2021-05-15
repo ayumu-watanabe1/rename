@@ -98,7 +98,7 @@ startYear, endYear = 1999, 2021
 
 for i in range(endYear - startYear + 1):
     l = []
-    l = SyoboiCal.search_title(startYear+i, i)
+    l = SyoboiCal.search_title(startYear+i, l)
     try:
         searchfolder(0, 150, str(startYear+i))
     except:  # この書き方は公式でもあまり推奨されません..
