@@ -1,6 +1,6 @@
 import os
 import re
-from ..function import MatchAnime
+import function.MatchAnime as MatchAnime
 
 #print("これからファイルを移動しますが、既に存在した場合　削除　しますか？ yesかnoで\n")
 delete = "0"

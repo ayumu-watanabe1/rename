@@ -1,1 +1,4 @@
 /.vs
+dataset/*.txt
+server/function/__pycache__
+develop-src/function/__pycache__

@@ -33,6 +33,9 @@ def tvList_get(url):
         else:
             map_arr = []
 
+        if '/' in tit:  # フォルダ名には/を使うことができないため置換
+            tit = tit.replace('/', '／')
+                
         map_arr.append(tit)
         map_dict[year] = map_arr
     return map_dict

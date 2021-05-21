@@ -3,7 +3,7 @@
 
 """
 import re
-from ..function import Rename_func
+import function.Rename_func as Rename_func
 
 print("これからファイルを移動しますが、既に存在した場合　削除　しますか？ yesかnoで\n")
 ans = input()

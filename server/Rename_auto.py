@@ -3,7 +3,7 @@
 
 """
 import re
-from ..function import Rename_func
+import function.Rename_func as Rename_func
 
 path1 = 'D:/TV(h.265)'
 # path1=r"D:\TV_data"
@@ -21,7 +21,7 @@ path6 = 'D:/TV(h.265)/ANIMAX MUSIX'
 
 Rename_func.rename(delete)
 
-openPath = '/dataset/'
+openPath = 'F:/git/rename/dataset/'
 startYear, endYear = 1999, 2021
 
 for i in range(endYear - startYear + 1):
@@ -29,7 +29,7 @@ for i in range(endYear - startYear + 1):
         AnimeList = [s.strip() for s in f.readlines()]
         try:
             Rename_func.searchfolder(
-                0, 150, str(startYear + i), path1, AnimeList)
+                0, 500, str(startYear + i), path1, AnimeList)
 
         except:  # この書き方は公式でもあまり推奨されません..
             pass
